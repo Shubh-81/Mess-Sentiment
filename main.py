@@ -1,3 +1,7 @@
+import subprocess
+
+subprocess.run(["pip", "install", "langchain==latest_version"])
+
 from langchain.llms import Ollama
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
@@ -73,4 +77,3 @@ if classify_button:
         st.write(f"**Sentiment:** Positive", key="result_output")
     else:
         st.write(f"**Sentiment:** Negative", key="result_output")
-
