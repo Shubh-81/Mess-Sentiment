@@ -1,6 +1,6 @@
 import subprocess
 
-subprocess.run(["pip", "install", "langchain==latest_version"])
+subprocess.run(["pip", "install", "langchain"])
 
 from langchain.llms import Ollama
 from langchain.callbacks.manager import CallbackManager
